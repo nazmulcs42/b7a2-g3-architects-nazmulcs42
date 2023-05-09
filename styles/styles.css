@@ -5,6 +5,94 @@
  * Date: 09/05/2023
 */
 
-.issue{
+
+/* Common Styles */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Section Starts */
+#header{
+    width: 100%;
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.nav .nav-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #131313;
+
+}
+.nav .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .nav-items .nav-item{
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav-banner .banner-details{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-banner .banner-details .banner-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+.nav-banner .banner-details .banner-text{
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.nav-banner .banner-details .banner-btn{
+    margin-top: 33px;
+    margin-bottom: 50px;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border: 0;
+    border-radius: 8px;
+}
+.nav-banner .banner-image img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Header Section Ends */
