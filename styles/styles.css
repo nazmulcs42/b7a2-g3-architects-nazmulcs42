@@ -93,6 +93,7 @@ section{
 .nav-banner .banner-image img{
     width: 100%;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 /* Header Section Ends */
@@ -206,13 +207,16 @@ section{
     line-height: 26px;
     color: #727272;
 }
+.features .feature-right .architect img{
+    width: 100%;
+}
 .experience{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -145px;
-    left: 30px;
+    top: -265px;
+    left: 75px;
 }
 .experience .experience-btn{
     display: inline-block;
@@ -290,13 +294,16 @@ section{
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 .achievement .achiv-boxes .achiv-box{
+    margin: 24px;
     text-align: center;
     padding: 45px 35px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 .achievement .achiv-boxes .achiv-box img{
     width: 50px;
@@ -393,6 +400,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .sponsor .sponsor-logos img{
     width: 100%;
@@ -423,3 +431,82 @@ section{
 }
 
 /* Footer Section Ends */
+
+/* Responsiveness Styles */
+
+@media screen and (max-width: 572px) {
+    /* Common Styles */
+    section{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    /* Header Styles */
+    .nav {
+        flex-direction: column;
+    }
+    .nav .nav-items{
+        margin-top: 24px;
+        flex-direction: column;
+    }
+    .nav .nav-items .nav-item {
+        margin-top: 25px;
+    }
+    .nav-banner .banner-details .banner-title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .nav-banner .banner-image img{
+        transform: scaleY(1.4) translateY(40px);
+    }
+
+    /* Main Section Styles */
+    .g3-architects{
+        flex-direction: column;
+    }
+    .g3-architects .g3-teams{
+        grid-template-columns: 1fr;
+    }
+    .g3-architects .g3-teams .team{
+        width: 400px;
+        height: 100%;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+    .features .feature-left, .feature-right{
+        width: 100%;
+    }
+    .features .feature-left .feature-boxes{
+        margin: 10px;
+    }
+
+    .experience{
+        top: -145px;
+        left: 0;
+    }
+
+    .achievement .achiv-boxes{
+        flex-direction: column;
+    }
+    .achievement .achiv-boxes .achiv-box{
+        width: 80%;
+    }
+
+    .employees .profiles{
+        grid-template-columns: 1fr;
+    }
+    .employees .profiles .employee{
+        margin: 10px;
+    }
+
+    .sponsor .sponsor-logos{
+        flex-direction: column;
+    }
+    .sponsor .sponsor-logos img{
+        margin: 50px auto;
+    }
+
+}
