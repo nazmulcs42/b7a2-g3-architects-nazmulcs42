@@ -509,4 +509,10 @@ section{
         margin: 50px auto;
     }
 
+    /* Footer Section Styles */
+    #footer{
+        width: 100%;
+        margin: 0;
+    }
+
 }
