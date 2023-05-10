@@ -389,7 +389,7 @@ section{
     color: #727272;
 }
 .sponsor .sponsor-logos{
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,3 +401,25 @@ section{
 }
 
 /* Main Section Ends */
+
+/* Footer Section Starts */
+
+#footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+#footer p{
+    padding: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    vertical-align: middle;
+    color: #424242;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+
+/* Footer Section Ends */
